@@ -5,7 +5,7 @@
   <version>0.0.1</version>
   <description>PX4 Launch files are created in this package.</description>
   <maintainer email="cem@galaxyuas.com">cem</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT</license>
 
   <exec_depend>ros2launch</exec_depend>
   <exec_depend>rclpy</exec_depend>
