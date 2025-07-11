@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 
-__author__ = "Cem Kaya"
-__contact__ = "cem@galaxyuas.com"
+__author__ = "Uluhan Cem Kaya"
+__contact__ = "uluhancem.kaya@uta.edu"
 
 import launch
 from launch import LaunchDescription

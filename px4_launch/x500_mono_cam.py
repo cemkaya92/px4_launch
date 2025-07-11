@@ -11,7 +11,7 @@ commands = [
     "MicroXRCEAgent udp4 -p 8888",
 
     # Run the PX4 SITL simulation
-    """cd ~/mypx4/PX4-Autopilot && PX4_SYS_AUTOSTART=4007 PX4_GZ_MODEL_POSE="0,0,0.15,0,0,0" PX4_SIM_MODEL=gz_x500_mono_cam PX4_GZ_MODEL=x500_mono_cam ./build/px4_sitl_default/bin/px4"""
+    """cd ~/mypx4/PX4-Autopilot && PX4_SYS_AUTOSTART=4010 PX4_GZ_MODEL_POSE="0,0,0.15,0,0,0" PX4_SIM_MODEL=gz_x500_mono_cam PX4_GZ_MODEL=x500_mono_cam ./build/px4_sitl_default/bin/px4"""
 
     # Run QGroundControl
     # "cd ~/QGroundControl && ./QGroundControl.AppImage"

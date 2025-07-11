@@ -9,9 +9,9 @@ px4_base_dir = '~/mypx4/PX4-Autopilot'
 
 # Lists for different parameters
 instance_ids = [0, 1]  # Instance IDs
-autostart_ids = [4102, 4201]  # Autostart IDs for different models
-gz_models = ['f450', 'asl_rover']  # GZ models
-sim_models = ['f450', 'asl_rover']  # Simulation models
+autostart_ids = [4103, 4201]  # Autostart IDs for different models
+gz_models = ['f450_mono_cam', 'asl_rover']  # GZ models
+sim_models = ['f450_mono_cam', 'asl_rover']  # Simulation models
 model_poses = ["0,0,0.15,0,0,1.6581", "0,5,0.20,0,0,1.6581"]  # Model poses (x,y,z,r,p,y)
 sim_world = 'default'  # Simulation world
 
