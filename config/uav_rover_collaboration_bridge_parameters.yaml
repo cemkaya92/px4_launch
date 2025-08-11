@@ -1,5 +1,5 @@
 - ros_topic_name: "/merged_scan"
-  gz_topic_name: "/world/default/model/asl_rover_0/model/lidar_2d_v2/link/link/sensor/lidar_2d_v2/scan"
+  gz_topic_name: "/world/default/model/asl_rover_0/model/rplidar_a2/link/link/sensor/gpu_lidar/scan"
   ros_type_name: "sensor_msgs/msg/LaserScan"
   gz_type_name: "gz.msgs.LaserScan"
   direction: GZ_TO_ROS
