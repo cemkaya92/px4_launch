@@ -38,27 +38,18 @@ def generate_launch_description():
         Node(
             package='ros_gz_bridge',
             executable='parameter_bridge',
-            arguments=[
-                '--ros-args',
-                '-p',
-                f'config_file:={bridge_params}',
-            ],
+            parameters=[{'config_file': bridge_params}],
             output='screen',
         ),
 
         Node(
-            package='ros_gz_bridge',
-            executable='parameter_bridge',
-            name='gz_camera_bridge',
-            output='screen',
+            package='tf2_ros',
+            executable='static_transform_publisher',
             arguments=[
-                # Bridge the image topic
-                '/world/default/model/f450_mono_cam_0/link/camera_link/sensor/imager/image'
-                '@sensor_msgs/msg/Image@gz.msgs.Image',
-                
-                # Bridge the camera_info topic
-                '/world/default/model/f450_mono_cam_0/link/camera_link/sensor/imager/camera_info'
-                '@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
-            ]
+                '0.0', '0', '0.0', '0', '3.14159', '0',
+                'map', 'asl_rover_1/rplidar_a2/link/gpu_lidar'
+            ],
+            output='screen'
         )
+
     ])

@@ -1,16 +1,16 @@
-- ros_topic_name: "/merged_scan"
-  gz_topic_name: "/world/default/model/asl_rover_0/model/rplidar_a2/link/link/sensor/gpu_lidar/scan"
+- ros_topic_name: "/rover/merged_scan"
+  gz_topic_name: "/world/default/model/asl_rover_1/model/rplidar_a2/link/link/sensor/gpu_lidar/scan"
   ros_type_name: "sensor_msgs/msg/LaserScan"
   gz_type_name: "gz.msgs.LaserScan"
   direction: GZ_TO_ROS
 
-- ros_topic_name: "/drone_cam/image"
+- ros_topic_name: "/drone/image"
   gz_topic_name: "/world/default/model/f450_mono_cam_0/link/camera_link/sensor/imager/image"
   ros_type_name: "sensor_msgs/msg/Image"
   gz_type_name: "gz.msgs.Image"
   direction: GZ_TO_ROS
 
-- ros_topic_name: "/drone_cam/camera_info"
+- ros_topic_name: "/drone/camera_info"
   gz_topic_name: "/world/default/model/f450_mono_cam_0/link/camera_link/sensor/imager/camera_info"
   ros_type_name: "sensor_msgs/msg/CameraInfo"
   gz_type_name: "gz.msgs.CameraInfo"
