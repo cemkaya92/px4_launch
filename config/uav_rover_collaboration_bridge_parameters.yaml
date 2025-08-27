@@ -1,4 +1,4 @@
-- ros_topic_name: "/rover/merged_scan"
+- ros_topic_name: "/px4_1/merged_scan"
   gz_topic_name: "/world/default/model/asl_rover_1/model/rplidar_a2/link/link/sensor/gpu_lidar/scan"
   ros_type_name: "sensor_msgs/msg/LaserScan"
   gz_type_name: "gz.msgs.LaserScan"
