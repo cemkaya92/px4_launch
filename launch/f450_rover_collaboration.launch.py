@@ -50,6 +50,16 @@ def generate_launch_description():
                 'map', 'asl_rover_1/rplidar_a2/link/gpu_lidar'
             ],
             output='screen'
+        ),
+
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            arguments=[
+                '0.0', '0', '0.0', '0', '3.14159', '0',
+                'map', 'asl_rover_2/rplidar_a2/link/gpu_lidar'
+            ],
+            output='screen'
         )
 
     ])
